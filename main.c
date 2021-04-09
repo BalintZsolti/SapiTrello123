@@ -2,6 +2,7 @@
 
 int main() {
     int x;
+    int jelenlegiFelhasznalo;
     felhasznalok felhasznalok;
     felhasznalok.felhaszSzama = 0;
     felhasznalok.felhasznalok = (int*) malloc (0*sizeof(int));
@@ -19,6 +20,7 @@ int main() {
                 for (int i = 0; i < felhasznalok.felhaszSzama; i++) {
                     if (felhasznalok.felhasznalok[i] == code) {
                         ok = 1;
+                        jelenlegiFelhasznalo = code;
                         break;
                     }
                 }
@@ -33,6 +35,7 @@ int main() {
 
             case 2: {
                 codeGen(&felhasznalok);
+                jelenlegiFelhasznalo = felhasznalok.felhasznalok[felhasznalok.felhaszSzama-1];
                 break;
             }
 //            case 3:{
@@ -40,6 +43,7 @@ int main() {
 //                break;
 //            }
         }
+        printf("%d", jelenlegiFelhasznalo);
         printf("\n");
     }
     return 0;
