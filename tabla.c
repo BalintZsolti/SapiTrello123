@@ -4,11 +4,24 @@
 
 #include "tabla.h"
 
-int codeGen(felhasznalok felhasz){
-    srand(time(0));
+void codeGen(felhasznalok* felhasz){
+//    srand(time(0));
     int n = rand();
-    for(int i = 0; i < felhasz.felhaszSzama){
-        if()
+    for(int i = 0; i < (*felhasz).felhaszSzama; i++){
+        if(n == (*felhasz).felhasznalok[i]){
+            n = rand();
+            i = 0;
+        }
     }
-    return ;
+    (*felhasz).felhaszSzama++;
+    (*felhasz).felhasznalok = (int*)realloc((*felhasz).felhasznalok, (*felhasz).felhaszSzama);
+    (*felhasz).felhasznalok[(*felhasz).felhaszSzama-1] = n;
+    printf("Az on egyedi kodja: %d\n", n);
+    return;
+}
+
+void kiirCode(felhasznalok felhasz){
+    for(int i = 0; i < felhasz.felhaszSzama; i++){
+        printf("%d\n", felhasz.felhasznalok[i]);
+    }
 }

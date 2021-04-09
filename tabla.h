@@ -8,6 +8,7 @@
 #include <stdio.h>
 #include <time.h>
 #include <stdlib.h>
+#include <stdbool.h>
 
 typedef struct{
     int* felhasznalok;
@@ -19,6 +20,7 @@ typedef struct{
     int* felhasznalok;
 }tabla;
 
-int codeGen(felhasznalok);
+void codeGen(felhasznalok*);
+void kiirCode(felhasznalok);
 
 #endif //UNTITLED1_TABLA_H
