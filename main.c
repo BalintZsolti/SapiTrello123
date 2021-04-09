@@ -43,7 +43,7 @@ int main() {
 //                break;
 //            }
         }
-        printf("%d", jelenlegiFelhasznalo);
+//        printf("%d", jelenlegiFelhasznalo);
         printf("\n");
     }
     return 0;
