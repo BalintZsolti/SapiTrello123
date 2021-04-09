@@ -5,7 +5,7 @@
 #include "tabla.h"
 
 void codeGen(felhasznalok* felhasz){
-//    srand(time(0));
+    srand(time(0));
     int n = rand();
     for(int i = 0; i < (*felhasz).felhaszSzama; i++){
         if(n == (*felhasz).felhasznalok[i]){
