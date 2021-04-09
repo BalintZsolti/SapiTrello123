@@ -67,10 +67,10 @@ RM = "C:\Program Files\JetBrains\CLion 2020.3.2\bin\cmake\win\bin\cmake.exe" -E 
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\Users\zsolt\CLionProjects\untitled1
+CMAKE_SOURCE_DIR = C:\Users\norbe\Desktop\Egyetem\SapiTrello123
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\zsolt\CLionProjects\untitled1\cmake-build-debug
+CMAKE_BINARY_DIR = C:\Users\norbe\Desktop\Egyetem\SapiTrello123\cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -99,9 +99,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\zsolt\CLionProjects\untitled1\cmake-build-debug\CMakeFiles C:\Users\zsolt\CLionProjects\untitled1\cmake-build-debug\CMakeFiles\progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\norbe\Desktop\Egyetem\SapiTrello123\cmake-build-debug\CMakeFiles C:\Users\norbe\Desktop\Egyetem\SapiTrello123\cmake-build-debug\CMakeFiles\progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\zsolt\CLionProjects\untitled1\cmake-build-debug\CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\norbe\Desktop\Egyetem\SapiTrello123\cmake-build-debug\CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -142,6 +142,33 @@ untitled1/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled1.dir\build.make CMakeFiles/untitled1.dir/build
 .PHONY : untitled1/fast
 
+kod.obj: kod.c.obj
+
+.PHONY : kod.obj
+
+# target to build an object file
+kod.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled1.dir\build.make CMakeFiles/untitled1.dir/kod.c.obj
+.PHONY : kod.c.obj
+
+kod.i: kod.c.i
+
+.PHONY : kod.i
+
+# target to preprocess a source file
+kod.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled1.dir\build.make CMakeFiles/untitled1.dir/kod.c.i
+.PHONY : kod.c.i
+
+kod.s: kod.c.s
+
+.PHONY : kod.s
+
+# target to generate assembly for a file
+kod.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled1.dir\build.make CMakeFiles/untitled1.dir/kod.c.s
+.PHONY : kod.c.s
+
 main.obj: main.c.obj
 
 .PHONY : main.obj
@@ -178,6 +205,9 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... untitled1
+	@echo ... kod.obj
+	@echo ... kod.i
+	@echo ... kod.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s
