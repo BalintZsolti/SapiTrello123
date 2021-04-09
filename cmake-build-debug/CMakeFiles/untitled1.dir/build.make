@@ -89,29 +89,29 @@ CMakeFiles/untitled1.dir/main.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/untitled1.dir/main.c.s"
 	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\norbe\Desktop\Egyetem\SapiTrello123\main.c -o CMakeFiles\untitled1.dir\main.c.s
 
-CMakeFiles/untitled1.dir/kod.c.obj: CMakeFiles/untitled1.dir/flags.make
-CMakeFiles/untitled1.dir/kod.c.obj: ../kod.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\norbe\Desktop\Egyetem\SapiTrello123\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/untitled1.dir/kod.c.obj"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\untitled1.dir\kod.c.obj   -c C:\Users\norbe\Desktop\Egyetem\SapiTrello123\kod.c
+CMakeFiles/untitled1.dir/tabla.c.obj: CMakeFiles/untitled1.dir/flags.make
+CMakeFiles/untitled1.dir/tabla.c.obj: ../tabla.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\norbe\Desktop\Egyetem\SapiTrello123\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/untitled1.dir/tabla.c.obj"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\untitled1.dir\tabla.c.obj   -c C:\Users\norbe\Desktop\Egyetem\SapiTrello123\tabla.c
 
-CMakeFiles/untitled1.dir/kod.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/untitled1.dir/kod.c.i"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\norbe\Desktop\Egyetem\SapiTrello123\kod.c > CMakeFiles\untitled1.dir\kod.c.i
+CMakeFiles/untitled1.dir/tabla.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/untitled1.dir/tabla.c.i"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\norbe\Desktop\Egyetem\SapiTrello123\tabla.c > CMakeFiles\untitled1.dir\tabla.c.i
 
-CMakeFiles/untitled1.dir/kod.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/untitled1.dir/kod.c.s"
-	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\norbe\Desktop\Egyetem\SapiTrello123\kod.c -o CMakeFiles\untitled1.dir\kod.c.s
+CMakeFiles/untitled1.dir/tabla.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/untitled1.dir/tabla.c.s"
+	C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\norbe\Desktop\Egyetem\SapiTrello123\tabla.c -o CMakeFiles\untitled1.dir\tabla.c.s
 
 # Object files for target untitled1
 untitled1_OBJECTS = \
 "CMakeFiles/untitled1.dir/main.c.obj" \
-"CMakeFiles/untitled1.dir/kod.c.obj"
+"CMakeFiles/untitled1.dir/tabla.c.obj"
 
 # External object files for target untitled1
 untitled1_EXTERNAL_OBJECTS =
 
 untitled1.exe: CMakeFiles/untitled1.dir/main.c.obj
-untitled1.exe: CMakeFiles/untitled1.dir/kod.c.obj
+untitled1.exe: CMakeFiles/untitled1.dir/tabla.c.obj
 untitled1.exe: CMakeFiles/untitled1.dir/build.make
 untitled1.exe: CMakeFiles/untitled1.dir/linklibs.rsp
 untitled1.exe: CMakeFiles/untitled1.dir/objects1.rsp

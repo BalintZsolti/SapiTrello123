@@ -74,13 +74,13 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="C:/Users/norbe/Desktop/Egyetem/SapiTrello123/kod.c">
-			<Option target="untitled1"/>
-		</Unit>
-		<Unit filename="C:/Users/norbe/Desktop/Egyetem/SapiTrello123/kod.h">
-			<Option target="untitled1"/>
-		</Unit>
 		<Unit filename="C:/Users/norbe/Desktop/Egyetem/SapiTrello123/main.c">
+			<Option target="untitled1"/>
+		</Unit>
+		<Unit filename="C:/Users/norbe/Desktop/Egyetem/SapiTrello123/tabla.c">
+			<Option target="untitled1"/>
+		</Unit>
+		<Unit filename="C:/Users/norbe/Desktop/Egyetem/SapiTrello123/tabla.h">
 			<Option target="untitled1"/>
 		</Unit>
 		<Unit filename="C:/Users/norbe/Desktop/Egyetem/SapiTrello123/CMakeLists.txt">
