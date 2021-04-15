@@ -9,6 +9,12 @@
 #include <time.h>
 #include <stdlib.h>
 #include <stdbool.h>
+#include <string.h>
+
+typedef struct{
+    char * cim;
+    char * leiras;
+}Kartya;
 
 typedef struct{
     int* felhasznalok;
@@ -18,9 +24,15 @@ typedef struct{
 typedef struct{
     char* nev;
     int* felhasznalok;
+    Kartya * kartyak;
 }tabla;
 
 void codeGen(felhasznalok*);
 void kiirCode(felhasznalok);
+void tablaLetrehozas();
+void kartyaLetrehozas();
+void tablakListazasa();
+
+tabla * tablak;
 
 #endif //UNTITLED1_TABLA_H

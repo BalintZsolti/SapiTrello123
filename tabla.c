@@ -4,6 +4,8 @@
 
 #include "tabla.h"
 
+tabla * tablak;
+
 void codeGen(felhasznalok* felhasz){
     srand(time(0));
     int n = rand();
@@ -24,4 +26,14 @@ void kiirCode(felhasznalok felhasz){
     for(int i = 0; i < felhasz.felhaszSzama; i++){
         printf("%d\n", felhasz.felhasznalok[i]);
     }
+}
+
+void tablaLetrehozas(){
+    freopen("CON", "rt", stdin);
+    static int tablaCounter = 0;
+    tablaCounter ++;
+    tablak = (tabla*) realloc (tablak, sizeof(tablaCounter));
+    printf("Adja meg a tabla cimet: ");
+    scanf("%[^\n]%*c", tablak->nev);
+    printf("A tabla sikeresen letrehozva.");
 }
