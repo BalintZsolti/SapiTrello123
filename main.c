@@ -5,8 +5,9 @@ int main() {
     bool tovabblepes = false;
     int jelenlegiFelhasznalo;
     felhasznalok felhasznalok;
-    felhasznalok.felhaszSzama = 0;
-    felhasznalok.felhasznalok = (int*) malloc (0*sizeof(int));
+    felhasznalok = createFelhasznalok();
+    int tablacounter = 0;
+
     while(1) {
         printf("Ha van kodja, nyomja meg az 1-es gombot.\n");
         printf("Amennyiben nincs, nyomja meg a 2-es gombot\n");
@@ -51,15 +52,29 @@ int main() {
         }
         while(1){
             printf("\nTabla letrehozasahoz nyomja meg az 1-es gombot.\n");
-            printf("Uj felhasznalo generalasahoz nyomja meg a 2-es gombot.\n");
+            printf("Felhasznalo hozzaadasahoz nyomja meg a 2-es gombot\n");
+            printf("Uj felhasznalo generalasahoz nyomja meg a 3-es gombot.\n");
+            printf("A felhasznalok kiirasahoz nyomja meg a 4-es gombot.\n");
+            printf("Kartya hozzaadasahoz nyomja meg az 5-os gombot\n");
             scanf("%d", &x);
             switch (x){
                 case 1:{
-                    tablaLetrehozas();
+                    tablaLetrehozas(jelenlegiFelhasznalo, &tablacounter);
                     break;
                 }
                 case 2:{
+                    int temp;
+                    printf("Adja meg a felvenni kivant szemely kodjat.");
+                    scanf("%d", &temp);
+                    felhasznaloHozzaadTabla(felhasznalok, temp);
+                    break;
+                }
+                case 3:{
                     tovabblepes = false;
+                    break;
+                }
+                case 4:{
+                    kiirFelhasznalok();
                 }
              }
              if(!tovabblepes){

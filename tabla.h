@@ -24,14 +24,18 @@ typedef struct{
 typedef struct{
     char* nev;
     int* felhasznalok;
+    int counter;
     Kartya * kartyak;
 }tabla;
 
+felhasznalok createFelhasznalok();
 void codeGen(felhasznalok*);
 void kiirCode(felhasznalok);
-void tablaLetrehozas();
+void tablaLetrehozas(int, int*);
 void kartyaLetrehozas();
-void tablakListazasa();
+void felhasznaloHozzaadTabla(felhasznalok, int felhasznalo);
+void tablakListazasa(int);
+void kiirFelhasznalok();
 
 tabla * tablak;
 

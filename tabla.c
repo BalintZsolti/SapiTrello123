@@ -6,6 +6,13 @@
 
 tabla * tablak;
 
+felhasznalok createFelhasznalok(){
+    felhasznalok felhasznalok;
+    felhasznalok.felhaszSzama = 0;
+    felhasznalok.felhasznalok = (int*) malloc (0*sizeof(int));
+    return felhasznalok;
+}
+
 void codeGen(felhasznalok* felhasz){
     srand(time(0));
     int n = rand();
@@ -28,12 +35,37 @@ void kiirCode(felhasznalok felhasz){
     }
 }
 
-void tablaLetrehozas(){
+void tablaLetrehozas(int user,int * counter){
     freopen("CON", "rt", stdin);
-    static int tablaCounter = 0;
-    tablaCounter ++;
-    tablak = (tabla*) realloc (tablak, sizeof(tablaCounter));
+    (*counter)++;
+    tablak = (tabla*) realloc (tablak, sizeof((*counter)));
     printf("Adja meg a tabla cimet: ");
     scanf("%[^\n]%*c", tablak->nev);
+    tablak->counter = 1;
+    tablak->felhasznalok = (int*) malloc (1*sizeof(int));
+    tablak->felhasznalok[0] = user;
     printf("A tabla sikeresen letrehozva.");
+}
+
+void felhasznaloHozzaadTabla(felhasznalok x, int felhasznalo){
+    bool ok = false;
+    for(int i = 0; i < x.felhaszSzama; i++){
+        if(x.felhasznalok[i] == felhasznalo){
+            ok = true;
+        }
+    }
+    if(!ok){
+        printf("Ervenytelen felhasznalo.\n");
+        return;
+    }
+    tablak->counter++;
+    tablak->felhasznalok = (int*) realloc (tablak->felhasznalok,sizeof(tablak->counter));
+    tablak->felhasznalok[tablak->counter-1] = felhasznalo;
+    printf("Felhasznalo sikeresen hozzaadva!\n");
+}
+
+void kiirFelhasznalok(){
+    for(int i = 0; i < tablak->counter; i++){
+        printf("%d ", tablak->felhasznalok[i]);
+    }
 }
