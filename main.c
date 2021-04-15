@@ -2,7 +2,7 @@
 
 int main() {
     int x;
-    bool helyesKod = false;
+    bool tovabblepes = false;
     int jelenlegiFelhasznalo;
     felhasznalok felhasznalok;
     felhasznalok.felhaszSzama = 0;
@@ -27,7 +27,7 @@ int main() {
                 }
                 if(ok == 1){
                     printf("A kod helyes\n");
-                    helyesKod = true;
+                    tovabblepes = true;
                 }
                 else{
                     printf("A kod helytelen, kerem csinaljon uj kodot\n");
@@ -46,18 +46,24 @@ int main() {
 //            }
         }
 //        printf("%d", jelenlegiFelhasznalo);
-        printf("\n");
-        if(!helyesKod){
+        if(!tovabblepes){
             continue;
         }
         while(1){
-            printf("Tabla letrehozasahoz nyomja meg az 1-es gombot: ");
+            printf("\nTabla letrehozasahoz nyomja meg az 1-es gombot.\n");
+            printf("Uj felhasznalo generalasahoz nyomja meg a 2-es gombot.\n");
             scanf("%d", &x);
             switch (x){
                 case 1:{
                     tablaLetrehozas();
                     break;
                 }
+                case 2:{
+                    tovabblepes = false;
+                }
+             }
+             if(!tovabblepes){
+                 break;
              }
         }
     }
