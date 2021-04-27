@@ -10,11 +10,7 @@
 #include <stdlib.h>
 #include <stdbool.h>
 #include <string.h>
-
-typedef struct{
-    char * cim;
-    char * leiras;
-}Kartya;
+#include "kartyak.h"
 
 typedef struct{
     int* felhasznalok;
@@ -26,6 +22,7 @@ typedef struct{
     int* felhasznalok;
     int counter;
     Kartya * kartyak;
+    int kartyaCounter;
 }tabla;
 
 felhasznalok createFelhasznalok();
@@ -33,9 +30,9 @@ void codeGen(felhasznalok*);
 void kiirCode(felhasznalok);
 void tablaLetrehozas(int, int*);
 void kartyaLetrehozas();
-void felhasznaloHozzaadTabla(felhasznalok, int felhasznalo);
+void felhasznaloHozzaadTabla(tabla, int felhasznalo, int counter);
 void tablakListazasa(int);
-void kiirFelhasznalok();
+void kiirFelhasznalok(int counter);
 
 tabla * tablak;
 

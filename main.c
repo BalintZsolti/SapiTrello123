@@ -1,4 +1,5 @@
 #include "tabla.h"
+#include "kartyak.h"
 
 int main() {
     int x;
@@ -54,7 +55,7 @@ int main() {
             printf("\nTabla letrehozasahoz nyomja meg az 1-es gombot.\n");
             printf("Felhasznalo hozzaadasahoz nyomja meg a 2-es gombot\n");
             printf("Uj felhasznalo generalasahoz nyomja meg a 3-es gombot.\n");
-            printf("A felhasznalok kiirasahoz nyomja meg a 4-es gombot.\n");
+            printf("A tabla felhasznalok kiirasahoz nyomja meg a 4-es gombot.\n");
             printf("Kartya hozzaadasahoz nyomja meg az 5-os gombot\n");
             scanf("%d", &x);
             switch (x){
@@ -66,7 +67,7 @@ int main() {
                     int temp;
                     printf("Adja meg a felvenni kivant szemely kodjat.");
                     scanf("%d", &temp);
-                    felhasznaloHozzaadTabla(felhasznalok, temp);
+                    felhasznaloHozzaadTabla(tablak[0], temp, tablacounter);
                     break;
                 }
                 case 3:{
@@ -74,7 +75,11 @@ int main() {
                     break;
                 }
                 case 4:{
-                    kiirFelhasznalok();
+                    kiirFelhasznalok(tablacounter);
+                    break;
+                }
+                case 5:{
+                    kartyaLetrehozas();
                 }
              }
              if(!tovabblepes){

@@ -74,6 +74,12 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="C:/Users/norbe/Desktop/Egyetem/SapiTrello123/kartryak.c">
+			<Option target="untitled1"/>
+		</Unit>
+		<Unit filename="C:/Users/norbe/Desktop/Egyetem/SapiTrello123/kartyak.h">
+			<Option target="untitled1"/>
+		</Unit>
 		<Unit filename="C:/Users/norbe/Desktop/Egyetem/SapiTrello123/main.c">
 			<Option target="untitled1"/>
 		</Unit>

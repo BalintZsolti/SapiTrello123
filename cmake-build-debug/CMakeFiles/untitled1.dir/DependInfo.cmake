@@ -4,6 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
+  "C:/Users/norbe/Desktop/Egyetem/SapiTrello123/kartryak.c" "C:/Users/norbe/Desktop/Egyetem/SapiTrello123/cmake-build-debug/CMakeFiles/untitled1.dir/kartryak.c.obj"
   "C:/Users/norbe/Desktop/Egyetem/SapiTrello123/main.c" "C:/Users/norbe/Desktop/Egyetem/SapiTrello123/cmake-build-debug/CMakeFiles/untitled1.dir/main.c.obj"
   "C:/Users/norbe/Desktop/Egyetem/SapiTrello123/tabla.c" "C:/Users/norbe/Desktop/Egyetem/SapiTrello123/cmake-build-debug/CMakeFiles/untitled1.dir/tabla.c.obj"
   )

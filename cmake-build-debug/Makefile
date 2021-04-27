@@ -142,6 +142,33 @@ untitled1/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled1.dir\build.make CMakeFiles/untitled1.dir/build
 .PHONY : untitled1/fast
 
+kartryak.obj: kartryak.c.obj
+
+.PHONY : kartryak.obj
+
+# target to build an object file
+kartryak.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled1.dir\build.make CMakeFiles/untitled1.dir/kartryak.c.obj
+.PHONY : kartryak.c.obj
+
+kartryak.i: kartryak.c.i
+
+.PHONY : kartryak.i
+
+# target to preprocess a source file
+kartryak.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled1.dir\build.make CMakeFiles/untitled1.dir/kartryak.c.i
+.PHONY : kartryak.c.i
+
+kartryak.s: kartryak.c.s
+
+.PHONY : kartryak.s
+
+# target to generate assembly for a file
+kartryak.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\untitled1.dir\build.make CMakeFiles/untitled1.dir/kartryak.c.s
+.PHONY : kartryak.c.s
+
 main.obj: main.c.obj
 
 .PHONY : main.obj
@@ -205,6 +232,9 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... untitled1
+	@echo ... kartryak.obj
+	@echo ... kartryak.i
+	@echo ... kartryak.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s

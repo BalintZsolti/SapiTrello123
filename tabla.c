@@ -44,18 +44,23 @@ void tablaLetrehozas(int user,int * counter){
     tablak->counter = 1;
     tablak->felhasznalok = (int*) malloc (1*sizeof(int));
     tablak->felhasznalok[0] = user;
+    tablak[0].kartyaCounter = 0;
     printf("A tabla sikeresen letrehozva.");
 }
 
-void felhasznaloHozzaadTabla(felhasznalok x, int felhasznalo){
-    bool ok = false;
-    for(int i = 0; i < x.felhaszSzama; i++){
+void felhasznaloHozzaadTabla(tabla x, int felhasznalo, int counter){
+    if(counter == 0){
+        printf("Meg nincs tabla letrehozva.");
+        return;
+    }
+    bool ok = true;
+    for(int i = 0; i < x.counter; i++){
         if(x.felhasznalok[i] == felhasznalo){
-            ok = true;
+            ok = false;
         }
     }
     if(!ok){
-        printf("Ervenytelen felhasznalo.\n");
+        printf("A felhasznalo mar hozza van adva a tablahoz.\n");
         return;
     }
     tablak->counter++;
@@ -64,7 +69,11 @@ void felhasznaloHozzaadTabla(felhasznalok x, int felhasznalo){
     printf("Felhasznalo sikeresen hozzaadva!\n");
 }
 
-void kiirFelhasznalok(){
+void kiirFelhasznalok(int counter){
+    if(counter == 0){
+        printf("Meg nincs tabla letrehozva\n");
+        return;
+    }
     for(int i = 0; i < tablak->counter; i++){
         printf("%d ", tablak->felhasznalok[i]);
     }

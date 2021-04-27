@@ -1,4 +1,5 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/untitled1.dir/kartryak.c.obj"
   "CMakeFiles/untitled1.dir/main.c.obj"
   "CMakeFiles/untitled1.dir/tabla.c.obj"
   "libuntitled1.dll.a"
